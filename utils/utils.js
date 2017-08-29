@@ -1,4 +1,4 @@
-const fs = require("fs");
+var fs = require("fs");
 
 var utils = {
 
@@ -40,7 +40,7 @@ var utilsPrivate = {
                 throw new Error("Invalid input parameter: type");
         }
 
-        fs.appendFileSync(fileName, `${date}: ${log}\n`);
+        fs.appendFileSync(fileName, `${new Date()}: ${log}\n`);
 
     }
 

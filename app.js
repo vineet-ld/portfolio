@@ -2,7 +2,7 @@ const express = require("express");
 const hbs = require("hbs");
 const fs = require("fs");
 
-const utils = require("./utils/utils");
+var utils = require("./utils/utils");
 
 const port = process.env.PORT || 3002;
 
@@ -29,3 +29,5 @@ app.listen(port, () => {
     utils.addServerLog(`Server started to port ${port}`);
     console.log(`Server started to port ${port}`);
 });
+
+module.exports.app = app;
