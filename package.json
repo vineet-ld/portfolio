@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Porfolio web site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "resume",
+    "biodata",
+    "profile"
+  ],
+  "author": "Vineet Dandekar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "hbs": "^4.0.1"
+  }
+}
