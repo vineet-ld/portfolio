@@ -3,12 +3,130 @@
 <head>
     <meta charset="utf-8">
     <title>Vineet Dandekar | Portfolio</title>
+
+    <!--Icon for the toolbar-->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--Bootstrap Social-->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <!--Font Awesome-->
+    <script src="https://use.fontawesome.com/49fa37fe5d.js"></script>
+
 </head>
 <body>
-{{> header}}
-<main>
+
+<header class="main-header">
+
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#main-menu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="logo">Vineet Dandekar</a>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Experience</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Certifications</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right social-icons">
+                        <li>
+                            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/vineet.dandekar"
+                               target="_blank">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-social-icon btn-linkedin"
+                               href="https://www.linkedin.com/in/vineetdandekar/" target="_blank">
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-social-icon btn-github" href="https://github.com/vineet-ld"
+                               target="_blank">
+                                <span class="fa fa-github"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-social-icon btn-microsoft" href="mailto:vineet_ld@live.com">
+                                <span class="fa fa-windows"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object img-thumbnail img-circle" src="/images/vineet.jpg"
+                                     alt="Image of me">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h1 class="media-heading">Vineet Dandekar</h1>
+                            <p>Lives in Boston, MA | From Thane, India</p>
+
+                            <div id="carousel-highlights" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <p>Software Engineer at RentalBeast</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>M.S. in Information Systems</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>3+ years of work experience</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>B.E. in Computer Engineering</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<!--<main>
     <h2>Main content</h2>
 </main>
-{{> footer}}
+{{> footer}}-->
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </html>

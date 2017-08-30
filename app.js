@@ -13,6 +13,7 @@ if(!fs.existsSync("logs")) {
 }
 
 app.set("view engine", "hbs");
+app.use(express.static(__dirname + "/public"));
 
 hbs.registerPartials(__dirname + "/views/partials");
 
@@ -29,5 +30,3 @@ app.listen(port, () => {
     utils.addServerLog(`Server started to port ${port}`);
     console.log(`Server started to port ${port}`);
 });
-
-module.exports.app = app;

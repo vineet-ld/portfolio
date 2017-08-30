@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,200i,400,400i,700,700i');
+
+header .navbar{
+    border-radius: 0;
+    margin-bottom: 0;
+}
+header .navbar .navbar-brand {
+    font-weight: normal;
+    font-size: 1.6em;
+}
+
+header .navbar .navbar-brand img{
+    max-width: 30px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.main-header .jumbotron {
+    background: url("../images/black-background.png") repeat, url("../images/boston.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main-header .jumbotron .media img{
+    max-width: 300px;
+}
+
+.main-header .jumbotron .media,
+.main-header .jumbotron .media h1{
+    color: #FFFFFF;
+    font-weight: 200;
+}
+
+.main-header .jumbotron .media .media-left {
+    padding-right: 150px;
+}
+
+.main-header #main-menu {
+    margin-bottom: 50px;
+}
+
+.main-header #main-menu ul li a {
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.main-header #main-menu .social-icons li{
+    margin: 15px 20px 0 0;
+}
+
+.main-header #main-menu ul li a:hover,
+.main-header #main-menu ul li a:focus{
+    background: none;
+}
+
+.main-header #main-menu ul:not(.navbar-right) li:hover a::after,
+.main-header #main-menu ul:not(.navbar-right) li.active a::after{
+    background: #FFDB46 none repeat scroll 0 0;
+    top: 0;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 50px;
+}
+
+.main-header #carousel-highlights {
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+.main-header #carousel-highlights p {
+    font-size: 2.5em;
+}
