@@ -30,13 +30,19 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#main-menu" aria-expanded="false">
+                        data-target="#main-menu-top" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="logo">Vineet Dandekar</a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-menu-top">
+                <ul class="nav navbar-nav navbar-right">
+                    <a rel="button" class="btn btn-info navbar-btn" href="/assets/Vineet_Dandekar_Resume.pdf"
+                       target="_blank"><span class="glyphicon glyphicon-download-alt"></span> Resume</a>
+                </ul>
             </div>
         </div><!-- /.container-fluid -->
     </nav>
@@ -120,10 +126,53 @@
 
 </header>
 
-<!--<main>
-    <h2>Main content</h2>
+<main class="main-body">
+
+    <div class="container roles-container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <p class="icon-container"><span class="fa fa-code"></span></p>
+                    <div class="caption">
+                        <h3>Front-End</h3>
+                        <p>My current role at <a href="https://www.rentalbeast.com/about" target="_blank">RentalBeast</a> is of a <strong>Front End Developer</strong>. I have a good
+                            experience of creating responsive web pages using front end technologies like <strong>Bootstrap</strong>.
+                            I have a good knowledge of the new features <strong>HTML5</strong> and <strong>CSS3</strong>
+                            can provide and I am a big fan of <strong>Angular JS</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <p class="icon-container"><span class="fa fa-server"></span></p>
+                    <div class="caption">
+                        <h3>Full-Stack</h3>
+                        <p>My current role at RentalBeast is of a Front End Developer. I have a good experience of
+                            creating responsive web pages using front end technologies like Bootstrap. I have a good
+                            knowledge of the new features HTML5 and CSS3 can provide and I am a big fan of Angular
+                            JS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <p class="icon-container"><span class="fa fa-database"></span></p>
+
+                    <div class="caption">
+                        <h3>Back-End</h3>
+                        <p>My current role at RentalBeast is of a Front End Developer. I have a good experience of
+                            creating responsive web pages using front end technologies like Bootstrap. I have a good
+                            knowledge of the new features HTML5 and CSS3 can provide and I am a big fan of Angular
+                            JS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </main>
-{{> footer}}-->
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"

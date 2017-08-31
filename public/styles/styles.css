@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,200i,400,400i,700,700i');
 
+/*General styles*/
+
+body {
+    font-family: 'Raleway', san-serif;
+}
+
+a {
+    font-weight: 600;
+    transition: color 200ms;
+}
+
+a:hover, a:focus {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+
+
+.btn.btn-info {
+    background-color: #21759B;
+    background-image: linear-gradient(to bottom, #2A95C5, #21759B);
+    border-color: #21759B #21759B #1E6A8D;
+}
+
 header .navbar{
     border-radius: 0;
     margin-bottom: 0;
@@ -15,10 +39,13 @@ header .navbar .navbar-brand img{
     display: inline-block;
 }
 
+/*Main page header*/
+
 .main-header .jumbotron {
     background: url("../images/black-background.png") repeat, url("../images/boston.jpg") no-repeat;
     background-size: cover;
     position: relative;
+    min-height: 65vh;
 }
 
 .main-header .jumbotron .media img{
@@ -40,7 +67,6 @@ header .navbar .navbar-brand img{
 }
 
 .main-header #main-menu ul li a {
-    font-family: 'Raleway', sans-serif;
     color: #FFFFFF;
     font-size: 1em;
     font-weight: 200;
@@ -76,4 +102,34 @@ header .navbar .navbar-brand img{
 
 .main-header #carousel-highlights p {
     font-size: 2.5em;
+}
+
+/*Main body*/
+
+.main-body .thumbnail {
+    border: none;
+    text-align: center;
+}
+
+.main-body .thumbnail .icon-container {
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.main-body .thumbnail .icon-container span.fa {
+    font-size: 3em;
+    color: #FFDB46;
+}
+
+.main-body .thumbnail .caption h3 {
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.main-body .roles-container .row {
+    margin-top: -130px;
+}
+
+.main-body .roles-container .row > div {
+    background: #FFFFFF;
 }
