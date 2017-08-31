@@ -126,6 +126,10 @@ header .navbar .navbar-brand img{
     margin-bottom: 35px;
 }
 
+.main-body .thumbnail .caption p {
+    line-height: 1.8;
+}
+
 .main-body .roles-container .row {
     margin-top: -130px;
 }
