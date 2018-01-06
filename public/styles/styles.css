@@ -39,13 +39,34 @@ header .navbar .navbar-brand img{
     display: inline-block;
 }
 
+.title-divider {
+    background-color: #cccccc;
+    content: "";
+    display: block;
+    height: 1px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    position: relative;
+    width: 150px;
+}
+
+.title-divider span {
+    background-color: #ffdb46;
+    content: "";
+    display: block;
+    height: 3px;
+    margin-top: 0;
+    position: absolute;
+    top: -1px;
+    width: 50px;
+}
+
 /*Main page header*/
 
 .main-header .jumbotron {
     background: url("../images/black-background.png") repeat, url("../images/boston.jpg") no-repeat;
     background-size: cover;
     position: relative;
-    min-height: 65vh;
 }
 
 .main-header .jumbotron .media img{
@@ -60,6 +81,7 @@ header .navbar .navbar-brand img{
 
 .main-header .jumbotron .media .media-left {
     padding-right: 150px;
+    padding-bottom: 85px;
 }
 
 .main-header #main-menu {
@@ -106,6 +128,20 @@ header .navbar .navbar-brand img{
 
 /*Main body*/
 
+.main-body h1 {
+    text-transform: uppercase;
+}
+
+.main-body p,
+.main-body li{
+    line-height: 1.8;
+}
+
+.main-body .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .main-body .thumbnail {
     border: none;
     text-align: center;
@@ -126,14 +162,60 @@ header .navbar .navbar-brand img{
     margin-bottom: 35px;
 }
 
-.main-body .thumbnail .caption p {
-    line-height: 1.8;
-}
-
 .main-body .roles-container .row {
     margin-top: -130px;
 }
 
 .main-body .roles-container .row > div {
     background: #FFFFFF;
+}
+
+.main-body .summary-container {
+    background-color: #F7F8FA;
+}
+
+/*.main-body .btn.btn-info {
+    background-color: #FFDB46;
+    background-image: linear-gradient(to bottom, #2A95C5, #21759B);
+    border-color: #21759B #21759B #1E6A8D;
+}*/
+
+.work .period {
+    font-size: 1.8em;
+
+}
+
+.work .panel-default {
+    border-color: #f2f2f2;
+}
+
+.work .panel-default:before {
+    border-bottom: 10px solid rgba(0, 0, 0, 0);
+    border-right: 10px solid #f2f2f2;
+    border-top: 10px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    margin-left: -25px;
+    position: absolute;
+    top: 15px;
+}
+
+.work .panel-body {
+    padding-top: 0;
+}
+
+.work .company {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.work .company > .title {
+    font-size: 1em;
+    font-style: italic;
+    text-transform: capitalize;
+    margin-left: 15px;
+}
+
+.work .period {
+    padding-top: 10px;
 }
