@@ -219,3 +219,42 @@ header .navbar .navbar-brand img{
 .work .period {
     padding-top: 10px;
 }
+
+.education-container .media-object {
+    width: 150px;
+    margin: 0 157px 0 50px;
+}
+
+.education-container .media .media-body p {
+    font-size: 1.35em;
+    font-style: italic;
+}
+
+.go-top {
+    /*position: fixed;*/
+    bottom: 0;
+    right: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 85px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #636B6B;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #f8f8f8;
+}
+
+footer .social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social-icons li {
+    display: inline-block;
+    margin: 0 15px;
+}
