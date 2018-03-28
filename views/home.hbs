@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vineet Dandekar | Portfolio</title>
 
     <!--Icon for the toolbar-->
@@ -30,16 +31,23 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#main-menu" aria-expanded="false">
+                        data-target="#main-menu-top" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="logo">Vineet Dandekar</a>
+                <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="logo"></a>
             </div>
             <div class="collapse navbar-collapse" id="main-menu-top">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav mobile">
+                    <li><a href="#">About <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#work-experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <!--<li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>-->
+                </ul>
+                <ul class="nav navbar-nav navbar-right visible-md">
                     <a rel="button" class="btn btn-info navbar-btn" href="/assets/Vineet_Dandekar_Resume.pdf"
                        target="_blank"><span class="glyphicon glyphicon-download-alt"></span> Resume</a>
                 </ul>
@@ -48,11 +56,11 @@
     </nav>
 
     <div class="jumbotron">
-        <div class="container">
+        <div class="container desktop">
             <div class="row">
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">About <span class="sr-only">(current)</span></a></li>
                         <li><a href="#work-experience">Experience</a></li>
                         <li><a href="#education">Education</a></li>
                         <!--<li><a href="#projects">Projects</a></li>
@@ -91,7 +99,7 @@
                     <div class="media">
                         <div class="media-left">
                             <a href="#">
-                                <img class="media-object img-thumbnail img-circle" src="/images/vineet.jpg"
+                                <img class="media-object img-thumbnail img-circle profile-img" src="/images/vineet.jpg"
                                      alt="Image of me">
                             </a>
                         </div>
@@ -122,6 +130,63 @@
 
             </div>
 
+        </div>
+        <div class="container mobile">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="#">
+                        <img class="img-thumbnail img-circle profile-img" src="/images/vineet.jpg"
+                             alt="Image of me">
+                    </a>
+                    <h1>Vineet Dandekar</h1>
+                    <p>Lives in Brighton, MA | From Thane, India</p>
+                </div>
+                <div class="col-xs-12">
+                    <div id="carousel-highlights" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <p>Software Engineer at RentalBeast</p>
+                            </div>
+                            <div class="item">
+                                <p>M.S. in Information Systems</p>
+                            </div>
+                            <div class="item">
+                                <p>4.5 years of work experience</p>
+                            </div>
+                            <div class="item">
+                                <p>B.E. in Computer Engineering</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <ul class="social-icons">
+                        <li>
+                            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/vineet.dandekar"
+                               target="_blank">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-social-icon btn-linkedin"
+                               href="https://www.linkedin.com/in/vineetdandekar/" target="_blank">
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-social-icon btn-github" href="https://github.com/vineet-ld"
+                               target="_blank">
+                                <span class="fa fa-github"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-social-icon btn-microsoft" href="mailto:vineet_ld@live.com">
+                                <span class="fa fa-windows"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -214,8 +279,8 @@
                 <div class="col-xs-12">
                     <article>
                         <div class="row work">
-                            <div class="col-md-3 period">Sept 2016 - current</div>
-                            <div class="col-md-9 panel panel-default">
+                            <div class="col-xs-12 col-md-3 period">Sept 2016 - current</div>
+                            <div class="col-xs-12 col-md-9 panel panel-default">
                                 <div class="panel-body">
                                     <header>
                                         <h2 class="company">
@@ -256,7 +321,7 @@
                                     <section>
                                         <p class="desc">Vantiv eCommerce (formally known as Litle & Co.) is a public US based payment
                                             processing and technology provider headquartered in the greater Cincinnati, Ohio area.</p>
-                                        <ul>
+                                        <ul class="desc">
                                             <li>Developed a feature to implicitly void a payment transaction, thereby eliminating
                                                 the need for any manual interventions when working on the Vantiv Payment Processing
                                                 gateway</li>
@@ -280,7 +345,7 @@
                                         <p class="desc">Omegakart is an eCommerce business which provides a platform for variety of
                                             products to be sold online with well organized category and advertisement of the products on
                                             various social networking platform to give your product a better visibility.</p>
-                                        <ul>
+                                        <ul class="desc">
                                             <li>Solely designed the architecture & workflow for Omegakart.com. Used Java Struts
                                                 framework at the back end and HTML, CSS & JavaScript for the front end
                                             </li>
@@ -299,7 +364,7 @@
                                     <section>
                                         <p class="desc">Headquartered in India, with an office in Wilton, CT, Web Access is a global
                                             software development company</p>
-                                        <ul>
+                                        <ul class="desc">
                                             <li>Developed a travel portal & enterprise management website using Java Strut 1.3
                                                 Framework, MySQL, JSP and JavaScript and Integrated hotel reservation APIs provided
                                                 by Kuoni and GTA, thereby eliminating the need to develop dedicated codes for hotel
@@ -326,14 +391,12 @@
                             <h1>Education</h1>
                             <div class="title-divider"><span></span></div>
                         </header>
-                        <section>
+                        <section class="desktop">
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="media">
                                         <div class="media-left">
-                                            <a href="#">
-                                                <img class="media-object" src="/images/nu_seal.png" alt="NEU Seal">
-                                            </a>
+                                            <img class="media-object" src="/images/nu_seal.png" alt="NEU Seal">
                                         </div>
                                         <div class="media-body media-middle">
                                             <h2 class="media-heading">Master of Science in Information Systems</h2>
@@ -346,12 +409,34 @@
                                 <div class="col-xs-12">
                                     <div class="media">
                                         <div class="media-left">
-                                            <a href="#">
-                                                <img class="media-object" src="/images/univ_of_mumbai.png" alt="Univ of Mumbai Seal">
-                                            </a>
+                                            <img class="media-object" src="/images/univ_of_mumbai.png" alt="Univ of Mumbai Seal">
                                         </div>
                                         <div class="media-body media-middle">
                                             <h2 class="media-heading">Bachelor of Engineering in Computer Engineering</h2>
+                                            <p>University of Mumbai, India</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="mobile">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="thumbnail">
+                                        <img src="/images/nu_seal.png" alt="NEU Seal">
+                                        <div class="caption">
+                                            <h2>Master of Science in Information Systems</h2>
+                                            <p>Northeastern University, Boston</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="thumbnail">
+                                        <img src="/images/univ_of_mumbai.png" alt="Univ of Mumbai Seal">
+                                        <div class="caption">
+                                            <h2>Bachelor of Engineering in Computer Engineering</h2>
                                             <p>University of Mumbai, India</p>
                                         </div>
                                     </div>
