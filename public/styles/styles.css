@@ -364,3 +364,15 @@ footer .social-icons li,
     }
 
 }
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+
+    .main-header .jumbotron {
+        padding-top: 0;
+    }
+
+    .main-header .jumbotron .profile-img {
+        margin: 10px;
+    }
+
+}
