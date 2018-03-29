@@ -359,4 +359,8 @@ footer .social-icons li,
         font-size: 1.5em;
     }
 
+    .education-container .thumbnail img {
+        width: 175px;
+    }
+
 }
