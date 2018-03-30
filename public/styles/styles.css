@@ -62,8 +62,13 @@ header .navbar .navbar-brand img{
 }
 
 .mobile,
-.tablet {
+.tablet,
+.laptop {
     display: none;
+}
+
+.desktop {
+    display: block;
 }
 
 /*Main page header*/
@@ -317,6 +322,7 @@ footer .social-icons li,
     }
 
     .tablet,
+    .laptop,
     .desktop {
         display: none;
     }
@@ -446,22 +452,8 @@ footer .social-icons li,
 
 }
 
-/* Tablet Screen */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-
-    .tablet {
-        display: block !important;
-    }
-
-    .mobile,
-    .desktop {
-        display: none;
-    }
-
-    .main-body .thumbnail .caption p {
-        margin: 0 auto;
-        width: 70%;
-    }
+/* Tablet and Laptop screen */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 
     .work .period {
         text-align: center;
@@ -479,9 +471,49 @@ footer .social-icons li,
         top: -20px;
         left: 50%;
     }
+}
+
+/* Tablet Screen */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .tablet {
+        display: block !important;
+    }
+
+    .mobile,
+    .laptop,
+    .desktop {
+        display: none;
+    }
+
+    .main-body .thumbnail .caption p {
+        margin: 0 auto;
+        width: 70%;
+    }
 
     .education-container .media-object {
         margin: 0 50px 0 50px;
     }
 
 }
+
+/* Laptop Screen */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .laptop {
+        display: block !important;
+    }
+
+    .mobile,
+    .tablet,
+    .desktop {
+        display: none;
+    }
+
+    .main-header #carousel-highlights p {
+        font-size: 1.8em;
+    }
+
+}
+
+
