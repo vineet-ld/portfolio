@@ -179,12 +179,6 @@ header .navbar .navbar-brand img{
     background-color: #F7F8FA;
 }
 
-/*.main-body .btn.btn-info {
-    background-color: #FFDB46;
-    background-image: linear-gradient(to bottom, #2A95C5, #21759B);
-    border-color: #21759B #21759B #1E6A8D;
-}*/
-
 .work .panel-default {
     border-color: #f2f2f2;
 }
@@ -265,25 +259,15 @@ footer .social-icons li,
 
 /* Media queries */
 
-/* Mobile screen */
-@media screen and (max-width: 767px) {
+/* Mobile & Tablet */
+@media screen and (max-width: 991px) {
 
-    .mobile {
-        display: block;
-    }
-
-    .tablet,
-    .desktop {
-        display: none;
+    .main-header .jumbotron {
+        height: 100vh;
     }
 
     .main-header .jumbotron .profile-img{
-        max-width: 100px;
         margin: 25px;
-    }
-
-    .main-header .jumbotron p {
-        font-size: 15px;
     }
 
     .main-header .row > div {
@@ -296,7 +280,7 @@ footer .social-icons li,
     }
 
     .main-header #carousel-highlights p {
-        font-size: 15px;
+        font-size: 21px;
     }
 
     .main-body .thumbnail {
@@ -309,6 +293,40 @@ footer .social-icons li,
 
     .main-body .thumbnail .icon-container {
         margin-bottom: 0;
+    }
+
+    .main-body .roles-container {
+        padding-top: 0;
+    }
+
+    .main-body .roles-container .row {
+        margin-top: 0;
+    }
+
+    .main-body .roles-container .row > div:first-child .thumbnail {
+        border: none;
+    }
+
+}
+
+/* Mobile screen */
+@media screen and (max-width: 767px) {
+
+    .mobile {
+        display: block !important;
+    }
+
+    .tablet,
+    .desktop {
+        display: none;
+    }
+
+    .main-header .jumbotron p {
+        font-size: 15px;
+    }
+
+    .main-header #carousel-highlights p {
+        font-size: 15px;
     }
 
     .work .period {
@@ -365,6 +383,16 @@ footer .social-icons li,
 
 }
 
+/* Mobile Screen - Iphone 5 and smaller */
+@media screen and (max-width: 374px) {
+
+    .main-header .jumbotron .profile-img{
+        max-width: 200px;
+    }
+
+}
+
+/* Mobile screen - landscape view */
 @media screen and (max-width: 767px) and (orientation: landscape) {
 
     .main-header .jumbotron {
@@ -373,6 +401,87 @@ footer .social-icons li,
 
     .main-header .jumbotron .profile-img {
         margin: 10px;
+        max-width: 100px;
+    }
+
+    .main-header .jumbotron h1 {
+        font-size: 1.5em;
+    }
+
+}
+
+/* Mobile screen - Iphone 5 and smaller landscape view */
+@media screen and (max-width: 666px) and (orientation: landscape) {
+
+    .main-header .jumbotron h1 {
+        margin: 0;
+    }
+
+}
+
+/* Mobile screen - Google pixel2 XL & Iphone X Landscape view */
+@media screen and (min-width: 768px) and (max-width: 823px) and (orientation: landscape) {
+
+    .main-header .jumbotron {
+        padding-top: 0;
+    }
+
+    .main-header .jumbotron h1 {
+        font-size: 1.65em;
+    }
+
+    .main-header .jumbotron p,
+    .main-header #carousel-highlights p{
+        font-size: 1em;
+    }
+
+    .main-header .jumbotron .profile-img {
+        margin: 10px;
+        max-width: 100px;
+    }
+
+    .main-header #main-menu {
+        margin-bottom: 0;
+    }
+
+}
+
+/* Tablet Screen */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .tablet {
+        display: block !important;
+    }
+
+    .mobile,
+    .desktop {
+        display: none;
+    }
+
+    .main-body .thumbnail .caption p {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .work .period {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .work .panel-default:before {
+        border-bottom: 10px solid #f2f2f2;
+        border-right: 10px solid rgba(0, 0, 0, 0);
+        border-left: 10px solid rgba(0, 0, 0, 0);
+        content: "";
+        display: inline-block;
+        margin-left: -25px;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+    }
+
+    .education-container .media-object {
+        margin: 0 50px 0 50px;
     }
 
 }
